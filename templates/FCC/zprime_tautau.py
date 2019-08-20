@@ -1,20 +1,22 @@
 import ROOT
 import collections
 
+ana_tex = "Z\'_{SSM} #rightarrow #tau^{+}#tau^{-}"
+
 ### variable list
 variables = {
-    "met":{"name":"met_pt","title":"MET [GeV]","bin":50,"xmin":0,"xmax":1000},
-    "mzp":{"name":"Mj1j2_pf04","title":"m_{Z'} [TeV]","bin":150,"xmin":0,"xmax":30, "divide":1000},
-    "mzp_metcor":{"name":"Mj1j2_pf04_MetCorr","title":"m_{Z'} [TeV]","bin":150,"xmin":0,"xmax":30, "divide":1000},
-    "mzp_metcor2":{"name":"Mj1j2_pf04_MetCorr2","title":"m_{Z'} [TeV]","bin":150,"xmin":0,"xmax":30, "divide":1000},
+#    "met":{"name":"met_pt","title":"MET [GeV]","bin":50,"xmin":0,"xmax":1000},
+#    "mzp":{"name":"Mj1j2_pf04","title":"m_{Z'} [TeV]","bin":150,"xmin":0,"xmax":30, "divide":1000},
+#    "mzp_metcor":{"name":"Mj1j2_pf04_MetCorr","title":"m_{Z'} [TeV]","bin":150,"xmin":0,"xmax":30, "divide":1000},
+#    "mzp_metcor2":{"name":"Mj1j2_pf04_MetCorr2","title":"m_{Z'} [TeV]","bin":150,"xmin":0,"xmax":30, "divide":1000},
     "mt":{"name":"mt","title":"m_{Z'}^{trans} [TeV]","bin":50,"xmin":0,"xmax":20, "divide":1000},
-    "dr":{"name":"dr","title":"#DeltaR(#tau_{1},#tau_{2})","bin":50,"xmin":0,"xmax":5},
-    "dphi":{"name":"dphi","title":"#DeltaPhi(#tau_{1},#tau_{2})","bin":50,"xmin":-4,"xmax":4},
-    "dphi_met":{"name":"dphi_met","title":"#DeltaPhi(Z',met)","bin":50,"xmin":-4,"xmax":4},
-    "pttau_1":{"name":"Jet1_pf04_pt","title":"p_{T}^{#tau, max} [TeV]","bin":50,"xmin":0.5,"xmax":10, "divide":1000},
-    "pttau_2":{"name":"Jet2_pf04_pt","title":"p_{T}^{#tau, min} [TeV]","bin":50,"xmin":0.5,"xmax":10, "divide":1000},
-    "etatau_1":{"name":"Jet1_pf04_eta","title":"#eta^{#tau, max}","bin":35,"xmin":-3.5,"xmax":3.5},
-    "etatau_2":{"name":"Jet2_pf04_eta","title":"#eta^{#tau, min}","bin":35,"xmin":-3.5,"xmax":3.5},
+#    "dr":{"name":"dr","title":"#DeltaR(#tau_{1},#tau_{2})","bin":50,"xmin":0,"xmax":5},
+#    "dphi":{"name":"dphi","title":"#DeltaPhi(#tau_{1},#tau_{2})","bin":50,"xmin":-4,"xmax":4},
+#    "dphi_met":{"name":"dphi_met","title":"#DeltaPhi(Z',met)","bin":50,"xmin":-4,"xmax":4},
+#    "pttau_1":{"name":"Jet1_pf04_pt","title":"p_{T}^{#tau, max} [TeV]","bin":50,"xmin":0.5,"xmax":10, "divide":1000},
+#    "pttau_2":{"name":"Jet2_pf04_pt","title":"p_{T}^{#tau, min} [TeV]","bin":50,"xmin":0.5,"xmax":10, "divide":1000},
+#    "etatau_1":{"name":"Jet1_pf04_eta","title":"#eta^{#tau, max}","bin":35,"xmin":-3.5,"xmax":3.5},
+#    "etatau_2":{"name":"Jet2_pf04_eta","title":"#eta^{#tau, min}","bin":35,"xmin":-3.5,"xmax":3.5},
 }
 
 variables2D = {}
@@ -75,7 +77,7 @@ uncertainties.append([0.02, 0.02])
 uncertainties.append([0.02, 0.10])
 
 # the first time needs to be set to True
-runFull = True
+runFull = False
 
 # base pre-selections
 #selbase = 'Jet1_pf04_pt > 1000. && Jet2_pf04_pt > 1000. && ntau>1'
@@ -173,7 +175,6 @@ selections['m_{Z} = 10 TeV'].append(selbase+seleta)
 #selections['m_{Z} = 30 TeV'].append(selbase+seleta+seldr)
 #selections['m_{Z} = 30 TeV'].append(selbase+seleta+seldr+selhighm)
 #selections['m_{Z} = 30 TeV'].append(sel20TeV)
-
 
 
 weights = collections.OrderedDict()

@@ -1,0 +1,40 @@
+## HELHC
+./bin/analyze.py -n HELHC.Zprime_ll -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/Zprime_ll/analysis.py -t /eos/experiment/fcc/helhc/analyses/Zprime_ll/heppy_outputs/helhc_v01/ -o outputs/analysis_helhc_v01/zpee -p templates/HELHC/zprime_ee.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 10000 -m
+#
+./bin/analyze.py -n HELHC.Zprime_ll -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/Zprime_ll/analysis.py -t /eos/experiment/fcc/helhc/analyses/Zprime_ll/heppy_outputs/helhc_v01/ -o outputs/analysis_helhc_v01/zpmumu -p templates/HELHC/zprime_mumu.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 10000 -m
+#
+./bin/analyze.py -n HELHC.RSGraviton_ww -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/RSGraviton_ww/analysis.py -t /eos/experiment/fcc/helhc/analyses/RSGraviton_ww/heppy_outputs/helhc_v01/May2018_HTsplit_prod/ -o outputs/analysis_helhc_v01/RSGww -p templates/HELHC/RSGraviton_ww.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 10000 -m --lsf --queue 2nd --multi_threading
+#
+./bin/analyze.py -n HELHC.Zprime_tt -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/Zprime_tt/analysis.py -t /eos/experiment/fcc/helhc/analyses/Zprime_tt/heppy_outputs/helhc_v01/May2018_HTsplit_prod/ -o outputs/analysis_helhc_v01/zptt -p templates/HELHC/zprime_ttbar.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 10000 -m  --lsf --queue 2nd --multi_threading
+#
+./bin/analyze.py -n HELHC.Dijet_reso -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/Dijet_reso/analysis.py -t /eos/experiment/fcc/helhc/analyses/Dijet_reso/heppy_outputs/helhc_v01/May2018_HTsplit_prod/ -o outputs/analysis_helhc_v01/dijet_res -p templates/HELHC/dijet_res.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 10000 -m  --lsf --queue 8nh --multi_threading
+#
+./bin/analyze.py -n HELHC.Zprime_mumu_flav_ano -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/Zprime_mumu_flav_ano/analysis.py -t /eos/experiment/fcc/helhc/analyses/Zprime_mumu_flav_ano/heppy_outputs/helhc_v01/May2018_HTsplit_prod/ -o outputs/analysis_helhc_v01/zpmumu -p templates/HELHC/zprime_mumu_fla_ano.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 100000 --lsf --queue 1nd --multi_threading
+#
+./bin/analyze.py -n HELHC.Zprime_tautau -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/Zprime_tautau/analysis.py -t/eos/experiment/fcc/helhc/analyses/Zprime_tautau/heppy_outputs/helhc_v01/May2018_HTsplit_prod/ -o outputs/analysis_helhc_v01/zptautau -p templates/HELHC/zprime_tautau.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 10000 -m  --lsf --queue 2nd --multi_threading
+#
+./bin/analyze.py -n HELHC.single_top -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/HELHC/single_top/analysis.py -t /eos/experiment/fcc/helhc/analyses/single_top/heppy_outputs/helhc_v01/May2018_HTsplit_prod/ -o outputs/analysis_helhc_v01/single_top -p templates/HELHC/single_top.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/HELHC_procDict_helhc_v01.json --nev 10000 -m  --lsf --queue 1nd --multi_threading
+
+## FCChh
+./bin/analyze.py -n FCChh.Zprime_mumu_flav_ano -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/Zprime_mumu_flav_ano/analysis.py -t /eos/experiment/fcc/hh/analyses/Zprime_mumu_flav_ano/heppy_outputs/fcc_v02/May2018_HTsplit_prod/ -o outputs/analysis_fcc_v02/zpmumu_fa -p templates/FCC/zprime_mumu_fla_ano.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m
+#
+./bin/analyze.py -n FCChh.Zprime_mumu_flav_ano -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/Zprime_mumu_flav_ano/analysis.py -t /eos/experiment/fcc/hh/analyses/Zprime_mumu_flav_ano/heppy_outputs/fcc_v02/May2018_HTsplit_prod/ -o outputs/analysis_fcc_v02/lqmumu -p templates/FCC/lq_mumu.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 100000
+#
+./bin/analyze.py -n FCChh.Zprime_tt -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/Zprime_tt/analysis.py -t /eos/experiment/fcc/hh/analyses/Zprime_tt/heppy_outputs/fcc_v02/May2018_HTsplit_prod/ -o outputs/analysis_fcc_v02/zptt -p templates/FCC/zprime_ttbar.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m  --lsf --queue 2nd --multi_threading
+#
+./bin/analyze.py -n FCChh.RSGraviton_ww -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/RSGraviton_ww/analysis.py -t /eos/experiment/fcc/hh/analyses/RSGraviton_ww/heppy_outputs/fcc_v02/May2018_HTsplit_prod/ -o outputs/analysis_fcc_v02/RSGww -p templates/FCC/RSGraviton_ww.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m --lsf --queue 2nd --multi_threading
+#
+./bin/analyze.py -n FCChh.tth_boosted -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/tth_boosted/analysis.py -t /eos/experiment/fcc/hh/analyses/Higgs/ttH/heppy_outputs/fcc_v02/May2018_highstat_prod/ -o outputs/analysis_fcc_v02/tth_boosted -p templates/FCC/tth_boosted.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m
+#
+./bin/analyze.py -n FCChh.Dijet_reso -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/Dijet_reso/analysis.py -t /eos/experiment/fcc/hh/analyses/Dijet_reso/heppy_outputs/fcc_v02_newHT/ -o outputs/analysis_fcc_v02/dijet_res -p templates/FCC/dijet_res.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m  --lsf --queue 8nh --multi_threading
+#
+./bin/analyze.py -n FCChh.Zprime_ll -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/Zprime_ll/analysis.py -t /eos/experiment/fcc/hh/analyses/Zprime_ll/heppy_outputs/fcc_v02/ -o outputs/analysis_fcc_v02/zpee -p templates/FCC/zprime_ee.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m
+#
+./bin/analyze.py -n FCChh.Zprime_ll -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/Zprime_ll/analysis.py -t /eos/experiment/fcc/hh/analyses/Zprime_ll/heppy_outputs/fcc_v02/ -o outputs/analysis_fcc_v02/zpmumu -p templates/FCC/zprime_mumu.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m
+#
+./bin/analyze.py -n FCChh.Zprime_tautau -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/Zprime_tautau/analysis.py -t/eos/experiment/fcc/hh/analyses/Zprime_tautau/heppy_outputs/fcc_v02/May2018_HTsplit_prod/ -o outputs/analysis_fcc_v02/zptautau -p templates/FCC/zprime_tautau.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json --nev 10000 -m  --lsf --queue 2nd --multi_threading
+#
+./bin/analyze.py -n FCChh.tttt -c /afs/cern.ch/user/d/djamin/extra/fcc/start_work/heppy/FCChhAnalyses/FCChh/tttt/analysis.py -t /afs/cern.ch/user/d/djamin/fcc_work/heppy/FCChhAnalyses/output/tttt_100ktest/ -o outputs/analysis_fcc_v02/tttt -p templates/FCC/tttt.py -j /afs/cern.ch/work/h/helsens/public/FCCDicts/FCC_procDict_fcc_v02.json
+### LSF
+.....fcc_v02.json --lsf --queue 2nd --multi_threading
+

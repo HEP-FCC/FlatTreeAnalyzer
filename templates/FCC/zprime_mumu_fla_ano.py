@@ -1,6 +1,8 @@
 import ROOT
 import collections
 
+ana_tex = "Z\' #rightarrow #mu^{+}#mu^{-} (1710.06363)"
+
 ### variable list
 variables = {
     "ptzp":{"name":"zprime_muon_pt","title":"p_{T}^{Z'} [GeV]","bin":200,"xmin":0,"xmax":20000},
@@ -61,10 +63,10 @@ uncertainties.append([0.02, 0.02])
 uncertainties.append([0.02, 0.10])
 
 # the first time needs to be set to True
-runFull = True
+runFull = False
 
 # base pre-selections
-selbase = 'lep1_pt > 1200. && lep2_pt > 1200. && abs(lep1_eta) < 4 && abs(lep2_eta) < 4 && zprime_muon_m > 2500.'
+selbase = 'lep1_pt > 1000. && lep2_pt > 1000. && abs(lep1_eta) < 4 && abs(lep2_eta) < 4 && zprime_muon_m > 2500.'
 
 # add mass-dependent list of event selections here if needed...
 
