@@ -15,7 +15,7 @@ Clone and initialisation
 
 If you do not attempt to contribute to the FCChhAnalyses repository, simply clone it:
 ```
-git clone git@github.com:FCC-hh-framework/FlatTreeAnalyzer.git
+git clone git@github.com:HEP-FCC/FlatTreeAnalyzer.git
 ```
 
 If you aim at contributing to the heppy repository, you need to fork and then clone the forked repository:
