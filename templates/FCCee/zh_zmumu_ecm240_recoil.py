@@ -51,10 +51,23 @@ runFull = True
 # base pre-selections
 selbase = 'recoil_m>10.'
 selopt  = 'zed_pt<65. && zed_m>70. && zed_m<100. && mu1_pt<75.&& mu2_pt<50. && met_pt<50.'
-# add mass-dependent list of event selections here if needed...
+selbb   = 'nbjets==2'
+seltautau   = 'ntaujets==2'
+selWhadWhad   = 'nljets+ncjets==4'
+selWhadWlep   = 'nljets+ncjets==2 && ((nele==1 &&  nmu_recoil==0) || (nele==0 &&  nmu_recoil==1) )'
+selWlepWlep   = '(nele==2 &&  nmu_recoil==0) || (nele==0 &&  nmu_recoil==2) ||  (nele==1 &&  nmu_recoil==1)'
+selWW  = selWhadWhad + '||' + selWhadWlep + '||' + selWlepWlep
+
+# add list of event selections here if needed...
 
 selections = collections.OrderedDict()
 selections['ZH'] = []
 selections['ZH'].append(selbase)
 selections['ZH'].append(selopt)
+selections['ZH'].append(selbb)
+selections['ZH'].append(seltautau)
+selections['ZH'].append(selWhadWhad)
+selections['ZH'].append(selWhadWlep)
+selections['ZH'].append(selWlepWlep)
+selections['ZH'].append(selWW)
 
